@@ -3,6 +3,7 @@
 @if defined PACKER_DEBUG (@echo on) else (@echo off)
 
 if not defined SDELETE_URL set SDELETE_URL=http://live.sysinternals.com/sdelete.exe
+set SDELETE_URL=http://www.wit.dk/temp/sdelete_1.61.0.0.exe
 
 for %%i in ("%SDELETE_URL%") do set SDELETE_EXE=%%~nxi
 set SDELETE_DIR=%TEMP%\sdelete
