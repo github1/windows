@@ -22,7 +22,7 @@ goto exit1
 ::::::::::::
 
 if not defined CHEF_URL if "%CM_VERSION%" == "latest" set CHEF_URL=https://www.getchef.com/chef/install.msi
-if not defined CHEF_URL set CHEF_URL=https://opscode-omnibus-packages.s3.amazonaws.com/windows/2008r2/x86_64/chef-windows-%CM_VERSION%.windows.msi
+if not defined CHEF_URL set CHEF_URL=https://packages.chef.io/files/stable/chef/12.6.0/windows/2012r2/chef-client-%CM_VERSION%-1-x86.msi
 
 set CHEF_MSI=chef-client-latest.msi
 set CHEF_DIR=%TEMP%\chef
