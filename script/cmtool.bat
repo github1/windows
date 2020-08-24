@@ -105,7 +105,7 @@ set OMNITRUCK_VERSION=%OMNITRUCK_VERSION:-1=%
 
 :: Use the Omnitruck API to determine the CHEF_URL
 echo ==^> Getting %OMNITRUCK_PRODUCT% %OMNITRUCK_VERSION% %OMNITRUCK_MACHINE_ARCH% download URL
-set url="https://omnitruck.chef.io/%OMNITRUCK_CHANNEL%/%OMNITRUCK_PRODUCT%/metadata?p=%OMNITRUCK_PLATFORM%&m=%OMNITRUCK_MACHINE_ARCH%&v=%OMNITRUCK_VERSION%"
+set url="https://omnitruck.chef.io/%OMNITRUCK_CHANNEL%/%OMNITRUCK_PRODUCT%/metadata?p=%OMNITRUCK_PLATFORM%&pv=2012r2&m=%OMNITRUCK_MACHINE_ARCH%&v=%OMNITRUCK_VERSION%"
 set filename="%TEMP%\omnitruck.txt"
 
 echo ==^> Using Chef Omnitruck API URL: !url!
